@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero image and text */
+.hero-image {
+    background-image: linear-gradient(
+    rgba(0,0,0,0.1), 
+    rgba(0,0,0,0.7)), 
+    url(Images/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.hero-text {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 10%;
+}
+
+.hero-text h1 {
+    font-size: 30px;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30963C;
+    color: white;
+}
+
+/* Lawn company name */
+.brand-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    margin: .5em;
+    
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: block;
+}
+
+/* Navbar hover shadow */
+.navbar-links li:hover {
+    background-color: #64CE71;
+}
+
+/* Home page three column layout */
+.column-container img{
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.column-container {
+    padding: 1%;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+.left-col, .right-col {
+    background-color: white;
+    width: 33.33%;
+    float: left;
+}
+
+.center-col {
+    background-color: white;
+    width: 33.33%;
+    float: left;
+}
+
+/* Service Page */
+.service-image {
+    background-image: linear-gradient(
+    rgba(0,0,0,0.1), 
+    rgba(0,0,0,0.7)), 
+    url(Images/Gallery4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 2em;
+    padding: 10%;
+}
+
+.service-list {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    list-style: none;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+.service-list li {
+    padding: 2%
+}
+
+.hero-text h1 {
+    font-size: 30px;
+}
+
+/* Contact form */
+
+
+.contact-box {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+form {
+    margin: 35px;
+}
+
+
+/* Form input Field */
+.input-field {
+    font-family: 'Inter', sans-serif;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+
+/* Submit Button for contact field */
+#btn {
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #30963C;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Image gallery CSS */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    overflow: auto;
+}
+
+.gallery-title {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.gallery {
+    margin: 10px;
+    border: 1x solid white;
+    float: none;
+    width: 390px;
+}
+
+.gallery img{
+    width: 250%;
+    height: auto;
+}
+
+.desc {
+    font-family: 'Inter', sans-serif;
+    padding 30px;
+    text-align: left;
+}
+
+/* Footer */
+
+footer{
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #30963C;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #1A533D;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+   float: left;
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu{
+  float: right;
+}
+
+.footer-menu ul{
+  display: flex;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+.footer-email {
+    border-style: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
